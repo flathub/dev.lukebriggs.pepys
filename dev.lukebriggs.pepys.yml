@@ -29,8 +29,8 @@ modules:
       - cp ./dev.lukebriggs.pepys.svg /app/share/icons/hicolor/scalable/apps/
     sources:
       - type: git
-        commit: cd6e1c58023a717ed15ee40180ee946609768a1d
-        tag: v1.0.1
+        commit: aa93757458a34dd0503e4978640e7658e6143a08
+        tag: v1.0.2
         url: https://github.com/LukeBriggsDev/Pepys
 
   - python3-requirements.json
@@ -75,9 +75,9 @@ modules:
   - name: kerberos
     subdir: src
     sources:
-    - type: archive
-      url: https://web.mit.edu/kerberos/dist/krb5/1.19/krb5-1.19.1.tar.gz
-      sha256: fa16f87eb7e3ec3586143c800d7eaff98b5e0dcdf0772af7d98612e49dbeb20b
+      - type: archive
+        url: https://web.mit.edu/kerberos/dist/krb5/1.19/krb5-1.19.1.tar.gz
+        sha256: fa16f87eb7e3ec3586143c800d7eaff98b5e0dcdf0772af7d98612e49dbeb20b
 
   - name: wkhtmltopdf
     buildsystem: simple
