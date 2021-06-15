@@ -58,6 +58,8 @@ modules:
             aarch64:
                 config-opts:
                     - --disable-feature=PyQt_Desktop_OpenGL
+    cleanup:
+      - /share/sip
     config-opts:
       - --confirm-license
       - --no-designer-plugin
@@ -115,6 +117,9 @@ modules:
           - python3 configure.py $processed
 
   - name: enchant
+    cleanup:
+      - '*.la'
+      - '*.a'
     sources:
       - type: archive
         url: https://github.com/AbiWord/enchant/releases/download/v2.2.15/enchant-2.2.15.tar.gz
@@ -149,6 +154,9 @@ modules:
       - ar x wkhtmltox_*.deb
       - tar -xf data.tar.xz
       - cp -r ./usr/local/* /app/
+    cleanup:
+      - /lib/libwkhtmltox.*
+      - /bin/wkhtmltoimage
     sources:
       - type: file
         only-arches:

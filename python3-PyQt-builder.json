@@ -4,6 +4,9 @@
     "build-commands": [
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"PyQt-builder\" --no-build-isolation"
     ],
+    "cleanup": [
+        "/lib/python3.8/site-packages/pyqtbuild/bundle/dlls"
+    ],
     "sources": [
         {
             "type": "file",
