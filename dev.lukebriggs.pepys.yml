@@ -33,8 +33,8 @@ modules:
       - cp ./dev.lukebriggs.pepys.svg /app/share/icons/hicolor/scalable/apps/
     sources:
       - type: git
-        commit: 48ac726be8282d11eb3dae4779f016df7fd9c11b
-        tag: v1.0.8
+        commit: 20b07a631f0b15f84cf731a18bf47697599595b8
+        tag: v1.1.1
         url: https://github.com/LukeBriggsDev/Pepys
 
   - python3-requirements.json
@@ -52,12 +52,12 @@ modules:
 
   - name: pyqt5
     build-options:
-        env:
-          - QMAKEPATH=/app/lib
-        arch:
-            aarch64:
-                config-opts:
-                    - --disable-feature=PyQt_Desktop_OpenGL
+      env:
+        - QMAKEPATH=/app/lib
+      arch:
+        aarch64:
+          config-opts:
+            - --disable-feature=PyQt_Desktop_OpenGL
     cleanup:
       - /share/sip
     config-opts:
