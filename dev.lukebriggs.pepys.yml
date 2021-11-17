@@ -12,6 +12,7 @@ finish-args:
   - --device=dri
   # For user to choose journal directory
   - --filesystem=home
+  - --filesystem=/media/
   # To access online content from journals
   - --share=network
   - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
