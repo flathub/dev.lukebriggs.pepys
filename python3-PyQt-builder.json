@@ -5,7 +5,7 @@
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"PyQt-builder\" --no-build-isolation"
     ],
     "cleanup": [
-        "/lib/python3.8/site-packages/pyqtbuild/bundle/dlls"
+        "/lib/python3.9/site-packages/pyqtbuild/bundle/dlls"
     ],
     "sources": [
         {
@@ -15,13 +15,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/12/29/af52add4755b7dbce928fe3df1b86a48d5c8bcd06e3333bf8f69ad19c1a5/PyQt-builder-1.10.0.tar.gz",
-            "sha256": "86bd19fde83d92beaefacdeac1e26c6e1918c300ff78d7ec2a19973bf2cf21b5"
+            "url": "https://files.pythonhosted.org/packages/8b/5f/1bd49787262ddce37b826ef49dcccf5a9970facf0ed363dee5ee233e681d/PyQt-builder-1.12.2.tar.gz",
+            "sha256": "f62bb688d70e0afd88c413a8d994bda824e6cebd12b612902d1945c5a67edcd7"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/33/e9/27730ac17713c0a80d81d8f3bb56213f1549d96f9dc183fd16a7eec6287c/sip-5.5.0.tar.gz",
-            "sha256": "5d024c419b30fea8a6de8c71a560c7ab0bc3c221fbfb14d55a5b865bd58eaac5"
+            "url": "https://files.pythonhosted.org/packages/07/4e/0de6d5872145f4cedf187aa8a9069ba91d7e293a82cbbaeabd10c45e9cf0/sip-6.5.0.tar.gz",
+            "sha256": "a1cf8431a8eb9392b3ff6dc61d832d0447bfdcae5b3e4256a5fa74dbc25b0734"
         },
         {
             "type": "file",
